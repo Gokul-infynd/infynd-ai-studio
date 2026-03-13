@@ -1,0 +1,90 @@
+INFO:     Will watch for changes in these directories: ['/home/gokul/projects/GitHub/infynd-ai-studio/infynd-ai-studio-backend']
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [31084] using WatchFiles
+DEBUG: Using DATABASE_URL=sqlite+aiosqlite:///./langflow.db
+[2m2026-03-10T04:04:44.370859Z[0m [[32m[1mdebug    [0m] [1mLogger set up with log level: debug[0m
+[2m2026-03-10T04:04:44.371028Z[0m [[32m[1mdebug    [0m] [1mCreate service ServiceType.SETTINGS_SERVICE[0m
+[2m2026-03-10T04:04:44.374255Z[0m [[32m[1mdebug    [0m] [1mUsing LANGFLOW_DATABASE_URL env variable[0m
+[2m2026-03-10T04:04:44.374410Z[0m [[32m[1mdebug    [0m] [1mSetting user agent to langflow[0m
+[2m2026-03-10T04:04:44.375905Z[0m [[32m[1mdebug    [0m] [1mLoaded secret key             [0m
+[2m2026-03-10T04:04:44.376162Z[0m [[32m[1mdebug    [0m] [1mCreate service ServiceType.TELEMETRY_SERVICE[0m
+[2m2026-03-10T04:04:44.376224Z[0m [[32m[1mdebug    [0m] [1mStarting plugin discovery (config_dir: /home/gokul/.cache/langflow)...[0m
+[2m2026-03-10T04:04:44.393179Z[0m [[32m[1mdebug    [0m] [1mPlugin discovery complete. Registered services: [<ServiceType.AUTH_SERVICE: 'auth_service'>][0m
+[2m2026-03-10T04:04:44.417339Z[0m [[33m[1mwarning  [0m] [1mCORS: Using permissive defaults (all origins + credentials). Set LANGFLOW_CORS_ORIGINS for production. Stricter defaults in v2.0.[0m
+INFO:     Started server process [31086]
+INFO:     Waiting for application startup.
+[2m2026-03-10T04:04:45.004189Z[0m [[32m[1mdebug    [0m] [1mStarting Langflow v1.8.0...   [0m
+[2m2026-03-10T04:04:45.004478Z[0m [[32m[1mdebug    [0m] [1mInitializing services         [0m
+[2m2026-03-10T04:04:45.006506Z[0m [[32m[1mdebug    [0m] [1mOverriding service registration for auth_service[0m
+[2m2026-03-10T04:04:45.006584Z[0m [[32m[1mdebug    [0m] [1mRegistered service class: auth_service -> AuthService[0m
+[2m2026-03-10T04:04:45.006882Z[0m [[32m[1mdebug    [0m] [1mCreate service ServiceType.CACHE_SERVICE[0m
+[2m2026-03-10T04:04:45.007082Z[0m [[32m[1mdebug    [0m] [1mInitializing database         [0m
+[2m2026-03-10T04:04:45.007359Z[0m [[32m[1mdebug    [0m] [1mCreate service ServiceType.DATABASE_SERVICE[0m
+[2m2026-03-10T04:04:45.010506Z[0m [[32m[1mdebug    [0m] [1msqlite connection, setting pragmas: ['PRAGMA synchronous = NORMAL', 'PRAGMA journal_mode = WAL', 'PRAGMA busy_timeout = 30000'][0m
+[2m2026-03-10T04:04:45.012630Z[0m [[32m[1mdebug    [0m] [1mDatabase and tables already exist[0m
+[2m2026-03-10T04:04:45.017657Z[0m [[32m[1mdebug    [0m] [1mAlembic initialized           [0m
+/home/gokul/projects/GitHub/infynd-ai-studio/services/workflow-builder/src/backend/base/langflow/alembic/env.py:118: SAWarning: WARNING: SQL-parsed foreign key constraint '('flow_id', 'flow', 'id')' could not be located in PRAGMA foreign_keys for table trace
+  context.run_migrations()
+/home/gokul/projects/GitHub/infynd-ai-studio/services/workflow-builder/src/backend/base/langflow/alembic/env.py:118: SAWarning: WARNING: SQL-parsed foreign key constraint '('flow_id', 'flow', 'id')' could not be located in PRAGMA foreign_keys for table trace
+  context.run_migrations()
+[2m2026-03-10T04:04:45.334788Z[0m [[32m[1mdebug    [0m] [1mDatabase initialized          [0m
+[2m2026-03-10T04:04:45.336098Z[0m [[32m[1mdebug    [0m] [1mAUTO_LOGIN is set to False. Removing default superuser if exists.[0m
+[2m2026-03-10T04:04:45.380057Z[0m [[32m[1mdebug    [0m] [1mCreate service ServiceType.AUTH_SERVICE[0m
+[2m2026-03-10T04:04:45.380160Z[0m [[32m[1mdebug    [0m] [1mCreating service from class: auth_service -> AuthService[0m
+[2m2026-03-10T04:04:45.380260Z[0m [[32m[1mdebug    [0m] [1mService created successfully: auth_service[0m
+[2m2026-03-10T04:04:45.380302Z[0m [[32m[1mdebug    [0m] [1mCreating default superuser.   [0m
+[2m2026-03-10T04:04:45.715636Z[0m [[32m[1mdebug    [0m] [1mSuperuser created successfully.[0m
+[2m2026-03-10T04:04:45.719035Z[0m [[32m[1mdebug    [0m] [1mSuccessfully cleaned up old transactions[0m
+[2m2026-03-10T04:04:45.720996Z[0m [[32m[1mdebug    [0m] [1mSuccessfully cleaned up old vertex builds[0m
+[2m2026-03-10T04:04:45.721470Z[0m [[32m[1mdebug    [0m] [1mServices initialized in 0.72s [0m
+[2m2026-03-10T04:04:45.721680Z[0m [[32m[1mdebug    [0m] [1mSetting up LLM caching        [0m
+[2m2026-03-10T04:04:45.722467Z[0m [[32m[1mdebug    [0m] [1mNo LLM cache set.             [0m
+[2m2026-03-10T04:04:45.722594Z[0m [[32m[1mdebug    [0m] [1mLLM caching setup in 0.00s    [0m
+[2m2026-03-10T04:04:45.722704Z[0m [[32m[1mdebug    [0m] [1mCopying profile pictures      [0m
+[2m2026-03-10T04:04:45.722975Z[0m [[32m[1mdebug    [0m] [1mCreate service ServiceType.STORAGE_SERVICE[0m
+[2m2026-03-10T04:04:45.723036Z[0m [[32m[1mdebug    [0m] [1mCreate service ServiceType.SESSION_SERVICE[0m
+[2m2026-03-10T04:04:45.755922Z[0m [[32m[1mdebug    [0m] [1mProfile pictures copied in 0.03s[0m
+[2m2026-03-10T04:04:45.756174Z[0m [[32m[1mdebug    [0m] [1mInitializing super user       [0m
+[2m2026-03-10T04:04:45.756326Z[0m [[32m[1mdebug    [0m] [1mSuper user initialized in 0.03s[0m
+[2m2026-03-10T04:04:45.756442Z[0m [[32m[1mdebug    [0m] [1mLoading bundles               [0m
+[2m2026-03-10T04:04:45.756575Z[0m [[32m[1mdebug    [0m] [1mBundles loaded in 0.00s       [0m
+[2m2026-03-10T04:04:45.756683Z[0m [[32m[1mdebug    [0m] [1mCaching types                 [0m
+[2m2026-03-10T04:04:45.756802Z[0m [[32m[1mdebug    [0m] [1mBuilding components cache     [0m
+[2m2026-03-10T04:04:45.792036Z[0m [[32m[1mdebug    [0m] [1mLoading components from built-in index[0m
+[2m2026-03-10T04:04:45.792390Z[0m [[32m[1mdebug    [0m] [1mLoaded 97 component categories from index[0m
+[2m2026-03-10T04:04:45.792585Z[0m [[32m[1mdebug    [0m] [1mLoaded 359 components         [0m
+[2m2026-03-10T04:04:45.792675Z[0m [[32m[1mdebug    [0m] [1mTypes cached in 0.04s         [0m
+[2m2026-03-10T04:04:45.792749Z[0m [[32m[1mdebug    [0m] [1mCreating/updating starter projects[0m
+[2m2026-03-10T04:04:45.795934Z[0m [[32m[1mdebug    [0m] [1mLoading starter projects      [0m
+[2m2026-03-10T04:04:45.832408Z[0m [[32m[1mdebug    [0m] [1mLoaded 32 starter projects    [0m
+[2m2026-03-10T04:04:45.832607Z[0m [[32m[1mdebug    [0m] [1mUpdating starter projects     [0m
+[2m2026-03-10T04:04:45.985091Z[0m [[32m[1mdebug    [0m] [1mSuccessfully updated 32 starter projects[0m
+[2m2026-03-10T04:04:46.051201Z[0m [[32m[1mdebug    [0m] [1mStarter projects created/updated in 0.26s[0m
+[2m2026-03-10T04:04:46.051782Z[0m [[32m[1mdebug    [0m] [1mStarting telemetry service    [0m
+[2m2026-03-10T04:04:46.053068Z[0m [[32m[1mdebug    [0m] [1mstarted telemetry service in 0.00s[0m
+[2m2026-03-10T04:04:46.053696Z[0m [[32m[1mdebug    [0m] [1mStarting MCP Composer service [0m
+[2m2026-03-10T04:04:46.054000Z[0m [[32m[1mdebug    [0m] [1mCreate service ServiceType.MCP_COMPOSER_SERVICE[0m
+[2m2026-03-10T04:04:46.054201Z[0m [[32m[1mdebug    [0m] [1mMCP Composer is enabled in settings. OAuth authentication will be enabled for MCP Servers.[0m
+[2m2026-03-10T04:04:46.054517Z[0m [[32m[1mdebug    [0m] [1mstarted MCP Composer service in 0.00s[0m
+[2m2026-03-10T04:04:46.054645Z[0m [[32m[1mdebug    [0m] [1mLoading flows                 [0m
+[2m2026-03-10T04:04:46.054876Z[0m [[32m[1mdebug    [0m] [1mCreate service ServiceType.JOB_QUEUE_SERVICE[0m
+[2m2026-03-10T04:04:46.055004Z[0m [[32m[1mdebug    [0m] [1mJobQueueService started: periodic cleanup task initiated.[0m
+[2m2026-03-10T04:04:46.055674Z[0m [[32m[1mdebug    [0m] [1mFlows loaded in 0.00s         [0m
+[2m2026-03-10T04:04:46.055831Z[0m [[32m[1mdebug    [0m] [1mTotal initialization time: 1.05s[0m
+INFO:     Application startup complete.
+[2m2026-03-10T04:04:46.274492Z[0m [[32m[1mdebug    [0m] [1mTelemetry data sent successfully.[0m
+[2m2026-03-10T04:04:46.325506Z[0m [[32m[1mdebug    [0m] [1mTelemetry data sent successfully.[0m
+INFO:     127.0.0.1:60246 - "GET /todos HTTP/1.1" 200
+[2m2026-03-10T04:04:56.056484Z[0m [[32m[1mdebug    [0m] [1mLoading MCP servers for projects[0m
+[2m2026-03-10T04:04:56.061167Z[0m [[32m[1minfo     [0m] [1mAuto-enabled API key authentication for existing project Starter Projects (8af4600a-62fc-4ff1-b5a5-6dd24d6f6cd0) due to AUTO_LOGIN=false[0m
+[2m2026-03-10T04:04:56.062101Z[0m [[32m[1mdebug    [0m] [1mInitialized MCP server for project: Starter Projects (8af4600a-62fc-4ff1-b5a5-6dd24d6f6cd0)[0m
+[2m2026-03-10T04:04:56.062595Z[0m [[32m[1mdebug    [0m] [1mStarting auto-configure starter projects MCP[0m
+[2m2026-03-10T04:04:56.063128Z[0m [[32m[1mdebug    [0m] [1mAuto-configure settings: add_projects_to_mcp_servers=True, create_starter_projects=True, update_starter_projects=True[0m
+[2m2026-03-10T04:04:56.072014Z[0m [[32m[1mdebug    [0m] [1mFound 1 users in the system   [0m
+[2m2026-03-10T04:04:56.072498Z[0m [[32m[1mdebug    [0m] [1mProcessing user: langflow (ID: 2ec7be95-cc67-44fd-9ce4-7de3d0116dd5)[0m
+[2m2026-03-10T04:04:56.075918Z[0m [[32m[1mdebug    [0m] [1mUser langflow has folders: [] [0m
+[2m2026-03-10T04:04:56.078692Z[0m [[32m[1mdebug    [0m] [1mNo starter projects folder ('Starter Project') found for user langflow, skipping[0m
+[2m2026-03-10T04:04:56.079090Z[0m [[32m[1mdebug    [0m] [1mUser langflow available folders: [][0m
+[2m2026-03-10T04:04:56.082145Z[0m [[32m[1mdebug    [0m] [1mNo new starter project MCP servers were added[0m
+[2m2026-03-10T04:04:56.082794Z[0m [[32m[1mdebug    [0m] [1mMCP servers loaded in 0.03s   [0m
+./run.sh: line 4: 31084 Killed                  uvicorn app.main:app --reload --port 8000

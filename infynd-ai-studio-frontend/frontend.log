@@ -1,0 +1,18 @@
+
+> infynd-ai-studio-frontend@0.1.0 dev /home/gokul/Projects/GitHub/infynd-ai-studio/infynd-ai-studio-frontend
+> next dev
+
+▲ Next.js 16.1.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://10.224.212.1:3000
+- Environments: .env.local
+
+✓ Starting...
+✓ Ready in 569ms
+ GET /login 200 in 410ms (compile: 223ms, render: 187ms)
+ GET /login 200 in 43ms (compile: 3ms, render: 39ms)
+ GET /login 200 in 54ms (compile: 3ms, render: 51ms)
+ GET /dashboard 200 in 235ms (compile: 23ms, render: 212ms)
+ GET /login 200 in 35ms (compile: 8ms, render: 27ms)
+ GET /dashboard/agents 200 in 107ms (compile: 58ms, render: 49ms)
+ GET /login 200 in 136ms (compile: 8ms, render: 128ms)
